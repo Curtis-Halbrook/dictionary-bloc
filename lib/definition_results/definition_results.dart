@@ -10,7 +10,7 @@ class DefinitionResults extends StatelessWidget {
       builder: (context, state) {
         return ListView.builder(
           itemCount: state.definitions.length,
-          padding: EdgeInsets.symmetric(vertical: 4.0),
+          padding: EdgeInsets.symmetric(vertical: 0.0),
           itemBuilder: (context, index) =>
               DefinitionResultTile(state.definitions[index]),
         );
@@ -28,8 +28,8 @@ class DefinitionResultTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        vertical: 4.0,
-        horizontal: 8.0,
+        vertical: 0.0,
+        horizontal: 0.0,
       ),
       child: ListTile(
         isThreeLine: true,
